@@ -1,8 +1,10 @@
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
-public class MultiUserLogin {
+public class MultiUserLoginTest {
 	
 	
 	public void login(String username, String password) {
@@ -33,7 +35,7 @@ public class MultiUserLogin {
 	
 
 	public static void main(String[] args) {
-		MultiUserLogin mul= new MultiUserLogin();
+		MultiUserLoginTest mul= new MultiUserLoginTest();
 		mul.login("standard_user", "secret_sauce");
 		mul.login("locked_out_user", "secret_sauce");
 		mul.login("problem_user", "secret_sauce");

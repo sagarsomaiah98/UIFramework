@@ -3,9 +3,12 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class LogOutTest {
 	
+	
+	@Test
 	public void logout() {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -25,8 +28,5 @@ public class LogOutTest {
 		
 	}
 
-	public static void main(String[] args) throws InterruptedException {
-		
-	}
 
 }
